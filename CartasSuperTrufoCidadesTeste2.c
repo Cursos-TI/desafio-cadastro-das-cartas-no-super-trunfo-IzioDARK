@@ -5,15 +5,19 @@ int main(){
     char Estado[50] = "Alagoas";
     char Código[20] = "A01";
     char Cidade[20] = "Maceio";
-    int População = 3127511;
+    unsigned long int População = 3127511;
     float Área= 27848.140;
     float PIB = 76.266;
-    int Numero = 27;
+    int Numero = 27; //pontos turisticos
     float Densidade;
     float PIBper;
+    float SuperPoder;
+    int Resultado;
 
     Densidade = População / Área;
     PIBper = População / PIB;
+    SuperPoder = Área + PIB + (float)Numero + PIBper;
+    Resultado;
 
     printf("Carta %d\n", Carta);
     printf("Estado: %s\n", Estado);
@@ -25,6 +29,7 @@ int main(){
     printf("Numero de Pontos Turisticos: %d\n", Numero);
     printf("Densidade Populacional: %.2f Hab/Km² \n", Densidade);
     printf("PIB per Capita: %.2f Reais\n", PIBper);
+    printf("Super Poder: %.2f\n", SuperPoder);
     printf("\n");
     printf("\n");
     
@@ -33,15 +38,19 @@ int main(){
     char estado[50] = "Pernanbuco";
     char código[20] = "A02";
     char cidade[20] = "Recife";
-    int população = 9058155;
+    unsigned long int população = 9058155;
     float área= 98067.881;
     float pib = 245.828;
-    int numero = 32;
+    int numero = 32; // Pontos Turisticos
     float densidade;
     float pibPER;
+    float superpoder;
+    int resultado;
 
     densidade = população / área;
     pibPER = população / pib;
+    superpoder = área + pib + (float)numero + pibPER;
+    resultado;
 
     
     printf("Carta %d\n", carta);
@@ -54,6 +63,20 @@ int main(){
     printf("Numero de Pontos Turisticos: %d\n", numero);
     printf("Densidade Populacional: %.2f Hab/Km² \n", densidade);
     printf("PIB per Capita: %.2f Reais\n", pibPER);
+    printf("Super Poder: %.2f\n", superpoder);
+    printf("\n");
+
+    População, população;
+    Área, área;
+    PIB, pib;
+    Numero, numero;
+    Densidade, densidade;
+
+    printf("Resultado da Comparação da Área: %d\n", Área < área);
+    printf("Resultado da Comparação do PIB: %d\n", PIB < pib);
+    printf("Resultado da Comparação dos Pontos Turisticos: %d\n", Numero < numero);
+    printf("Resultado da Comparação das densidades: %d\n", Densidade < densidade);
+    printf("Resultado da Comparação do Super Poder: %d\n", SuperPoder < superpoder);
 
     return 0;
 }
